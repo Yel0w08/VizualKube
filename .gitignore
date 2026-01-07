@@ -3,3 +3,6 @@
 /bin/Release/net10.0
 /bin/Debug
 /bin/publish
+*.mp4
+*.cmd
+/.vs
