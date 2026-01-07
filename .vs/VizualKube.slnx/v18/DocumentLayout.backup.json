@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Git\\VizualKube\\",
+  "WorkspaceRootPath": "D:\\VizualKube\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2B299BD-9C1D-1CE1-F3A3-F02993174104}|VizualKube.csproj|c:\\git\\vizualkube\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2B299BD-9C1D-1CE1-F3A3-F02993174104}|VizualKube.csproj|d:\\vizualkube\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2B299BD-9C1D-1CE1-F3A3-F02993174104}|VizualKube.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Git\\VizualKube\\Program.cs",
+              "DocumentMoniker": "D:\\VizualKube\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Git\\VizualKube\\Program.cs",
+              "ToolTip": "D:\\VizualKube\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwEsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-15T12:13:49.772Z",
               "IsPinned": true,
