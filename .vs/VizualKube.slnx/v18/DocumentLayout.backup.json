@@ -5,6 +5,12 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2B299BD-9C1D-1CE1-F3A3-F02993174104}|VizualKube.csproj|d:\\vizualkube\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2B299BD-9C1D-1CE1-F3A3-F02993174104}|VizualKube.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\natha\\Downloads\\SDL3-3.4.0-win32-x86\\SDL3.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\natha\\Downloads\\SDL3-3.4.0-win32-x86\\SDL3.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       0 ! )$  \u0022     "
     }
   ],
   "DocumentGroupContainers": [
@@ -24,11 +30,30 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\VizualKube\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAmwC0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwFoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-15T12:13:49.772Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SDL3.dll - 1 [Anglais (\u00C9tats-Unis)] - Version",
+              "DocumentMoniker": "C:\\Users\\natha\\Downloads\\SDL3-3.4.0-win32-x86\\SDL3.dll",
+              "ToolTip": "C:\\Users\\natha\\Downloads\\SDL3-3.4.0-win32-x86\\SDL3.dll - 1 [Anglais (\u00C9tats-Unis)] - Version",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-01-11T20:43:18.189Z",
+              "EditorCaption": " - 1 [Anglais (\u00C9tats-Unis)] - Version"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SDL3.dll",
+              "DocumentMoniker": "C:\\Users\\natha\\Downloads\\SDL3-3.4.0-win32-x86\\SDL3.dll",
+              "ToolTip": "C:\\Users\\natha\\Downloads\\SDL3-3.4.0-win32-x86\\SDL3.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-01-11T20:43:13.779Z"
             }
           ]
         }

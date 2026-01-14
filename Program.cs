@@ -1,5 +1,4 @@
 ﻿using System.Text;
-
 string AppTmpDir = @"C:\tmp\";
 string PythonFile = AppTmpDir + @"PyKube.py";
 string BatchFile = AppTmpDir + @"PyKube.bat";
