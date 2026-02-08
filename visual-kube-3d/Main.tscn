@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bh15mmcfjc154"]
+
+[ext_resource type="Script" uid="uid://kn0mxlxmmv8t" path="res://KubeMaker.gd" id="1_glv2v"]
+
+[node name="Main" type="Node3D" unique_id=910386812]
+
+[node name="Kube" type="Node3D" parent="." unique_id=349503149]
+script = ExtResource("1_glv2v")
+
+[node name="Label" type="Label" parent="." unique_id=1906261875]
+offset_left = 1.0
+offset_right = 1157.0
+offset_bottom = 659.0
+text = "NOPE "
+
+[node name="Camera" type="Camera3D" parent="." unique_id=1453556323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1153003, 2.2222676)
+current = true

@@ -11,8 +11,15 @@ config_version=5
 [application]
 
 config/name="VisualKube3D"
+run/main_scene="uid://bh15mmcfjc154"
 config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
 config/icon="res://icon.svg"
+
+[display]
+
+mouse_cursor/custom_image="uid://bc04rl72soet0"
 
 [physics]
 
