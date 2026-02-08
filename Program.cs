@@ -1,11 +1,12 @@
 ﻿using System.Text;
+using System.Text.Json;
 string AppTmpDir = @"C:\tmp\";
 string PythonFile = AppTmpDir + @"PyKube.py";
 string BatchFile = AppTmpDir + @"PyKube.bat";
-bool DoCleanTMPFiles = false;
+bool DoCleanTMPFiles = true;
 int colorNumber = 2;
 string KubeParts = "#";
-
+bool DoGeneratePyKube = true;
 Console.BackgroundColor = ConsoleColor.Black;
 List<ConsoleColor> colorsList = new List<ConsoleColor>()
 {
@@ -77,26 +78,29 @@ void KubeBuilder()
             KubePartsBuilder();
         }
     }
-
-    Console.WriteLine("\n Press Enter to Generate Final Cube ");
-    Console.ReadLine();
-    GeneratePythonKube(AppTmpDir, PythonFile, BatchFile, DoCleanTMPFiles, staticX, staticY, pyTranslatedColor);
+    if (DoGeneratePyKube == true)
+    {
+        Console.WriteLine("\n Press Enter to Generate Final Cube ");
+        Console.ReadLine();
+        GeneratePythonKube(AppTmpDir, PythonFile, BatchFile, DoCleanTMPFiles, staticX, staticY, pyTranslatedColor);
+    }
+    else { Console.WriteLine("\n Press Enter to Exit "); Console.ReadLine(); }
 
     void GeneratePythonKube(string AppTmpDir, string PythonFile, string BatchFile, bool DoCleanTMPFiles, int staticX, int staticY, string pyTranslatedColor)
-    {
-        if (!Directory.Exists(AppTmpDir))
         {
-            Directory.CreateDirectory(AppTmpDir);
-        }
-        var pythonTurtleCode = $"import turtle\r\n\r\nturtle.title('PyKube')\r\nfrom time import sleep\r\nturtle.color({pyTranslatedColor})\r\nfor i in range(2):\r\n    sleep(0.2)\r\n    turtle.begin_fill()\r\n    turtle.forward({staticX * 10})\r\n    turtle.left(90)\r\n    turtle.forward({staticY * 10})\r\n    turtle.left(90)\r\n    sleep(0.2)\r\n    turtle.end_fill()\r\nturtle.penup()\r\nturtle.left(90)\r\nturtle.left(90)\r\nturtle.forward(1000)\r\nturtle.done()\r\n\r\n";
-        WriteFile(PythonFile, pythonTurtleCode);
-        var batchPythonLaunch = $"start {PythonFile}";
-        WriteFile(BatchFile, batchPythonLaunch);
+            if (!Directory.Exists(AppTmpDir))
+            {
+                Directory.CreateDirectory(AppTmpDir);
+            }
+            var pythonTurtleCode = $"import turtle\r\n\r\nturtle.title('PyKube')\r\nfrom time import sleep\r\nturtle.color({pyTranslatedColor})\r\nfor i in range(2):\r\n    sleep(0.2)\r\n    turtle.begin_fill()\r\n    turtle.forward({staticX * 10})\r\n    turtle.left(90)\r\n    turtle.forward({staticY * 10})\r\n    turtle.left(90)\r\n    sleep(0.2)\r\n    turtle.end_fill()\r\nturtle.penup()\r\nturtle.left(90)\r\nturtle.left(90)\r\nturtle.forward(1000)\r\nturtle.done()\r\n\r\n";
+            WriteFile(PythonFile, pythonTurtleCode);
+            var batchPythonLaunch = $"start {PythonFile}";
+            WriteFile(BatchFile, batchPythonLaunch);
 
-        System.Diagnostics.Process.Start(@"C:\tmp\PyKube.bat");
-        if (DoCleanTMPFiles == true) { SayIt("Cleanig TMP files... "); Thread.Sleep(2000); File.Delete(BatchFile); Thread.Sleep(5000); File.Delete(PythonFile); }
-        else { Console.Beep(); Console.WriteLine(@"Data stored on C:\tmp"); Thread.Sleep(1000); File.Delete(BatchFile); Console.Read(); }
-    }
+            System.Diagnostics.Process.Start(@"C:\tmp\PyKube.bat");
+            if (DoCleanTMPFiles == true) { SayIt("Cleanig TMP files... "); Thread.Sleep(2000); File.Delete(BatchFile); Thread.Sleep(5000); File.Delete(PythonFile); }
+            else { Console.Beep(); Console.WriteLine(@"Data stored on C:\tmp"); Thread.Sleep(1000); File.Delete(BatchFile); Console.Read(); }
+        }
 }
 
 void SayIt(string sayIt) { Console.Write(sayIt); }
