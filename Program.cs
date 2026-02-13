@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Text.Json;
+
 string AppTmpDir = @"C:\tmp\";
 string PythonFile = AppTmpDir + @"PyKube.py";
 string BatchFile = AppTmpDir + @"PyKube.bat";
@@ -7,6 +8,35 @@ bool DoCleanTMPFiles = true;
 int colorNumber = 2;
 string KubeParts = "#";
 bool DoGeneratePyKube = true;
+string configjsonfilename = "config.json";
+
+var config = new
+{
+    AppTmpDir,
+    PythonFile,
+    BatchFile,
+    DoCleanTMPFiles,
+    colorNumber,
+    KubeParts,
+    DoGeneratePyKube,
+    configjsonfilename
+};
+if (File.Exists(configjsonfilename))
+{ 
+
+
+}
+else
+{
+    string jsonConfig = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
+    string fileName = "Config.json";
+    File.WriteAllText(fileName, jsonConfig);
+SayIt("Config file not foud.\n Config file created with default settings.\n Please edit the config.json file to change settings and restart the application.\n");
+Console.WriteLine("Press any key to continue...");
+    Console.ReadKey();
+}
+
+
 Console.BackgroundColor = ConsoleColor.Black;
 List<ConsoleColor> colorsList = new List<ConsoleColor>()
 {
